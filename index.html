@@ -1,0 +1,206 @@
++<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,400&display=swap"
+        rel="stylesheet">
+
+
+    <title>MS1 - Conversor de Moedas</title>
+</head>
+
+<body>
+
+    <div id="Cabeçalho">
+        <h1>MS1 - Conversor de Moedas</h1>
+    </div>
+
+    <div id="caixa_principal">
+
+
+        <p class="Paragrafo">Converter <b>de</b></p>
+
+        <select class="select" id="select-moedas">
+            <option>R$ Real Brasileiro</option>
+
+        </select class="select">
+        <p class="paragrafo"><b>Converter para </b> </p>
+        <select id="s" class="select">
+            <option>US$ Dólar Americano</option>
+            <option>€ Euro</option>
+        </select>
+
+        <p class="Paragrafo"><b>Valor </b></p>
+
+        <input id="input" placeholder="10.000,00" type="number">
+
+        <button id="botao">Converter</button>
+
+        <div class="caixa_interna">
+            <div class="caixa-menor">
+                <img src="./img/brasil 2.png">
+                <p>Real</p>
+                <p class="paragrafo_negrito" id="texto-real">R$ 10.000,00</p>
+            </div>
+
+
+            <img id="seta" src="./img/Vector.png">
+
+            <div class="caixa-menor">
+
+        <img id="bandeira-moeda" src="./img/estados-unidos (1) 1.png">
+
+        <p class="paragrafo" id="texto-moeda"><b>Dólar Americano</b> </p>
+        <p class="paragrafo_negrito" id="input-moedas">$ 2000</p>
+
+    </div>
+    </div>
+    </div>
+</body>
+<style>
+    body {
+        background: #2C2C2C;
+        background-image: url("img/planoDFD.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    * {
+        font-family: 'Roboto', sans-serif;
+        padding: 0;
+        margin: 0;
+    }
+
+
+
+    #Cabeçalho {
+        background-color: darkred;
+        width: 425px;
+        height: 66px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+    }
+
+    h1 {
+        color: #f4f4f4;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 20px;
+
+    }
+
+    #caixa_principal {
+        background:silver;
+        width: 375px;
+        padding: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .paragrafo {
+        margin-bottom: 6px;
+        color: hsl(0, 0%, 29%);
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .select {
+        background: #FFFFFF;
+        width: 327px;
+        height: 48px;
+        border: 1px solid #BBBBBB;
+        border-radius: 4px;
+        appearance: none;
+        outline: none;
+        cursor: pointer;
+        padding-left: 16px;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 23px;
+        appearance: none;
+
+
+    }
+
+    #input {
+        width: 327px;
+        height: 48px;
+        background: #FFFFFF;
+        border: 1px solid #BBBBBB;
+        box-sizing: border-box;
+        margin-bottom: 23px;
+        border-radius: 4px;
+        outline: none;
+        padding-left: 16px;
+        font-size: 16px;
+    }
+
+    #botao {
+        background:darkred;
+        border-radius: 25px;
+        display: block;
+        width: 327px;
+        height: 48px;
+        cursor: pointer;
+        border: none;
+        margin-bottom: 26px;
+        font-weight: bold;
+        font-size: 18px;
+        color: #F4F4F4;
+        outline: none;
+
+    }
+
+    #botao:active {
+        opacity: 0.6;
+    }
+
+    .caixa_interna {
+        border: 1px solid #9657A5;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        border-radius: 4px;
+        width: 325px;
+        height: 276px;
+    }
+
+    .caixa-menor {
+        text-align: center;
+
+    }
+
+    #seta {
+        
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+    }
+
+    .paragrafo_negrito {
+        font-weight: bold;
+        font-size: 20px;
+
+    }
+    
+    
+</style>
+<script src="./scripts.js">
+    
+    
+</script>
+
+</html>
